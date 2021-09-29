@@ -12,6 +12,8 @@ public class Testforsøg {
             cup2.print();
             player2.redirectPoint(cup2);
 
+
+
         }
 
     }
