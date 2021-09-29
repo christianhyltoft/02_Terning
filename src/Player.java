@@ -14,7 +14,7 @@ public class Player {
 
 
     public void redirectPoint(RaffleCup x) {
-        if (win == true) {
+        if (win) {
 
         } else {
             if (x.interning2 == x.interning1) {

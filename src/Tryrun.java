@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Testforsøg {
+public class Tryrun {
     public static void main(String[] args) {
         RaffleCup cup1 = new RaffleCup();
         RaffleCup cup2 = new RaffleCup();
