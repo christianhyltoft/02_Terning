@@ -119,6 +119,7 @@ public class RaffleCup {
         System.out.println("Antal par 4 " + par4);
         System.out.println("Antal par 5 " + par5);
         System.out.println("Antal par 6 " + par6);
+        System.out.println("Totale antal par er " + (par1 + par2 +par3 + par4 + par5 + par6));
     }}
 
 
