@@ -1,10 +1,24 @@
+
 import gui_main.*;
 
 public class RaffleCup {
-    int interning1;
-    int interning2;
-    int sum;
-    GUI gui = new GUI();
+    private int interning1;
+    private int interning2;
+    private int sum;
+    private GUI gui = new GUI();
+
+    public int getInterning1() {
+        return interning1;
+    }
+
+    public int getInterning2() {
+        return interning2;
+    }
+
+    public int getSum() {
+        return sum;
+    }
+
 
     public void roll() {
         interning1 = (int) (Math.random() * 6 + 1);

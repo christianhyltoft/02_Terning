@@ -1,11 +1,10 @@
 import java.util.*;
 
-public class Tryrun {
+public class Game {
     public static void main(String[] args) {
         RaffleCup cup1 = new RaffleCup();
         Player player1 = new Player(cup1, "player 1");
         Player player2 = new Player(cup1, "player 2");
-        cup1.test();
         System.out.println("Welcome to the dice game press enter to play and to countinue playing after rolling ");
         while (!player1.win && !player2.win) {
             Scanner input = new Scanner(System.in);

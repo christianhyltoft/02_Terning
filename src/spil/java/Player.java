@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Player {
-    String inname;
-    RaffleCup incup;
+    final String inname;
+   final RaffleCup incup;
     int points;
     boolean win = false;
 
@@ -15,7 +15,7 @@ public class Player {
         if (win) {
 
         } else {
-            if (x.interning2 == x.interning1) {
+            if (x.getInterning1() == x.getInterning2()) {
                 samefaces(x);
             } else {
                 awardpoint(x);
@@ -24,40 +24,40 @@ public class Player {
     }
 
     private void awardpoint(RaffleCup x) {
-        points = points + x.interning1 + x.interning2;
+        points = points + x.getInterning1() + x.getInterning2();
         System.out.println(inname + " You now have " + points + " Points");
 
     }
 
     private void samefaces(RaffleCup x) {
         if (points >= 40) {
-            if (x.interning1 == x.interning2 && x.interning1 != 1) {
+            if (x.getInterning1() == x.getInterning2() && x.getInterning1() != 1) {
                 win();
             }
 
         } else {
 
-            if (x.interning1 == 1) {
+            if (x.getInterning1() == 1) {
                 points = 0;
                 System.out.println(inname + " Your points have been reset, and now you have " + points + " Points");
                 reroll(x);
-            } else if (x.interning1 == 6) {
-                points = points + x.interning1 + x.interning2;
+            } else if (x.getInterning1() == 6) {
+                points = points + x.getInterning1() + x.getInterning2();
                 printpoint();
                 System.out.println("Congratulations you may now roll again if you roll two of the same kind you win the game");
 
                 x.roll();
-                if (x.interning1 == 6 && x.interning2 == 6) {
+                if (x.getInterning1() == 6 && x.getInterning2() == 6) {
                     win();
                 }
-                if (x.interning1 == 1) {
+                if (x.getInterning1() == 1) {
                     points = 0;
                     System.out.println(inname + " Your points have been reset, and now you have " + points + " Points");
                     reroll(x);
                 }
 
             } else {
-                points = points + x.interning1 + x.interning2;
+                points = points + x.getInterning1() + x.getInterning2();
                 printpoint();
                 reroll(x);
             }
