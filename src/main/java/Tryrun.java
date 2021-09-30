@@ -1,9 +1,10 @@
+import gui_main.GUI;
+
 import java.util.*;
 
 public class Tryrun {
     public static void main(String[] args) {
         RaffleCup cup1 = new RaffleCup();
-        RaffleCup cup2 = new RaffleCup();
         Player player1 = new Player(cup1, "player 1");
         Player player2 = new Player(cup1, "player 2");
         System.out.println("Welcome to the dice game press enter to play and to countinue playing after rolling ");
@@ -17,9 +18,9 @@ public class Tryrun {
                 break;
             }
             String turnp2 = input.nextLine();
-            cup2.roll();
-            cup2.print();
-            player2.redirectPoint(cup2);
+            cup1.roll();
+            cup1.print();
+            player2.redirectPoint(cup1);
             if (player2.win) {
                 break;
             }

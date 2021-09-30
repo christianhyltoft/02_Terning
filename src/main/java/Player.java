@@ -1,3 +1,5 @@
+import gui_main.GUI;
+
 import java.util.*;
 
 public class Player {
@@ -5,6 +7,7 @@ public class Player {
     RaffleCup incup;
     int points;
     boolean win = false;
+
 
 
     public Player(RaffleCup cup, String name) {
