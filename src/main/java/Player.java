@@ -50,7 +50,7 @@ public class Player {
             } else if (x.interning1 == 6) {
                 points = points + x.interning1 + x.interning2;
                 printpoint();
-                System.out.println("Congratulations you may now roll again if you roll to 6's you win the game");
+                System.out.println("Congratulations you may now roll again if you roll two of the same kind you win the game");
 
                 x.roll();
                 if (x.interning1 == 6 && x.interning2 == 6) {
