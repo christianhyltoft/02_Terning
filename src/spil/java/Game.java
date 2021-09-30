@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Game {
     public static void main(String[] args) {
+        //Main metode der laver objektinstanser og derefter koerer spillet.
         RaffleCup cup1 = new RaffleCup();
         Player player1 = new Player(cup1, "player 1");
         Player player2 = new Player(cup1, "player 2");

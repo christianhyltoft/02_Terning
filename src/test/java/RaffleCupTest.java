@@ -23,6 +23,7 @@ public class RaffleCupTest {
         interning2 = (int) (Math.random() * 6 + 1);
         sum = interning1 + interning2;
     }
+    // En test der kalder roll(); 1000 gang og tæller sum og par.
     public void test() {
         int j = 0;
         int count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0, count7 = 0,
