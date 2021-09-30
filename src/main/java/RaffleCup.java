@@ -101,25 +101,25 @@ public class RaffleCup {
 
 
         }
-        System.out.println("Antal af summen 2 " + count2);
-        System.out.println("Antal af summen 3 " + count3);
-        System.out.println("Antal af summen 4 " + count4);
-        System.out.println("Antal af summen 5 " + count5);
-        System.out.println("Antal af summen 6 " + count6);
-        System.out.println("Antal af summen 7 " + count7);
-        System.out.println("Antal af summen 8 " + count8);
-        System.out.println("Antal af summen 9 " + count9);
-        System.out.println("Antal af summen 10 " + count10);
-        System.out.println("Antal af summen 11 " + count11);
-        System.out.println("Antal af summen 12 " + count12);
+        System.out.println("Total sum of 2: " + count2);
+        System.out.println("Total sum of 3: " + count3);
+        System.out.println("Total sum of 4: " + count4);
+        System.out.println("Total sum of 5: " + count5);
+        System.out.println("Total sum of 6: " + count6);
+        System.out.println("Total sum of 7: " + count7);
+        System.out.println("Total sum of 8: " + count8);
+        System.out.println("Total sum of 9: " + count9);
+        System.out.println("Total sum of 10: " + count10);
+        System.out.println("Total sum of 11: " + count11);
+        System.out.println("Total sum of 12: " + count12);
 
-        System.out.println("Antal par 1 " + par1);
-        System.out.println("Antal par 2 " + par2);
-        System.out.println("Antal par 3 " + par3);
-        System.out.println("Antal par 4 " + par4);
-        System.out.println("Antal par 5 " + par5);
-        System.out.println("Antal par 6 " + par6);
-        System.out.println("Totale antal par er " + (par1 + par2 +par3 + par4 + par5 + par6));
+        System.out.println("Total amount of pairs of 1: " + par1);
+        System.out.println("Total amount of pairs of 2: " + par2);
+        System.out.println("Total amount of pairs of 3: " + par3);
+        System.out.println("Total amount of pairs of 4: " + par4);
+        System.out.println("Total amount of pairs of 5: " + par5);
+        System.out.println("Total amount of pairs of 6: " + par6);
+        System.out.println("Combined sum of pairs: " + (par1 + par2 +par3 + par4 + par5 + par6));
     }}
 
 
