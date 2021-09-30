@@ -36,7 +36,7 @@ public class Player {
 
     private void samefaces(RaffleCup x) {
         if (points >= 40) {
-            if (x.interning1 == x.interning2) {
+            if (x.interning1 == x.interning2 && x.interning1!=1) {
                 win();
             }
 
@@ -56,7 +56,11 @@ public class Player {
                 if (x.interning1 == 6 && x.interning2 == 6) {
                     win();
                 }
-                points = points + x.interning1 + x.interning2;
+                if (x.interning1 == 1) {
+                    points = 0;
+                    System.out.println(inname + " Your points have been reset, and now you have " + points + " Points");
+                    reroll(x);}
+
 
             } else {
                 points = points + x.interning1 + x.interning2;
