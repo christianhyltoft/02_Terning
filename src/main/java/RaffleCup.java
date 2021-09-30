@@ -15,6 +15,11 @@ public class RaffleCup {
 
 
     }
+    private void testRoll() {
+        interning1 = (int) (Math.random() * 6 + 1);
+        interning2 = (int) (Math.random() * 6 + 1);
+        sum = interning1 + interning2;
+        gui.setDice(interning1, interning2);}
 
 
     private void print() {
@@ -30,7 +35,7 @@ public class RaffleCup {
 
         while (j < 1000) {
             j = j + 1;
-            roll();
+            testRoll();
             switch (sum) {
                 case 2:
                     count2++;
@@ -91,28 +96,29 @@ public class RaffleCup {
 
                 }
             }
-            System.out.println("Antal af summen 2 " + count2);
-            System.out.println("Antal af summen 3 " + count3);
-            System.out.println("Antal af summen 4 " + count4);
-            System.out.println("Antal af summen 5 " + count5);
-            System.out.println("Antal af summen 6 " + count6);
-            System.out.println("Antal af summen 7 " + count7);
-            System.out.println("Antal af summen 8 " + count8);
-            System.out.println("Antal af summen 9 " + count9);
-            System.out.println("Antal af summen 10 " + count10);
-            System.out.println("Antal af summen 11 " + count11);
-            System.out.println("Antal af summen 12 " + count12);
 
-            System.out.println("Antal par 1 " + par1);
-            System.out.println("Antal par 2 " + par2);
-            System.out.println("Antal par 3 " + par3);
-            System.out.println("Antal par 4 " + par4);
-            System.out.println("Antal par 5 " + par5);
-            System.out.println("Antal par 6 " + par6);
 
 
 
         }
+        System.out.println("Antal af summen 2 " + count2);
+        System.out.println("Antal af summen 3 " + count3);
+        System.out.println("Antal af summen 4 " + count4);
+        System.out.println("Antal af summen 5 " + count5);
+        System.out.println("Antal af summen 6 " + count6);
+        System.out.println("Antal af summen 7 " + count7);
+        System.out.println("Antal af summen 8 " + count8);
+        System.out.println("Antal af summen 9 " + count9);
+        System.out.println("Antal af summen 10 " + count10);
+        System.out.println("Antal af summen 11 " + count11);
+        System.out.println("Antal af summen 12 " + count12);
+
+        System.out.println("Antal par 1 " + par1);
+        System.out.println("Antal par 2 " + par2);
+        System.out.println("Antal par 3 " + par3);
+        System.out.println("Antal par 4 " + par4);
+        System.out.println("Antal par 5 " + par5);
+        System.out.println("Antal par 6 " + par6);
     }}
 
 
