@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Tryrun {
@@ -22,12 +21,6 @@ public class Tryrun {
             if (player2.win) {
                 break;
             }
-
-
         }
-
-
-
-
     }
 }

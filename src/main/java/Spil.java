@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Spil{
+public class Spil {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -14,20 +14,18 @@ public class Spil{
         while (true) {
             //Getting total points for Player1
 
-                Die1 = (int) (Math.random() * 6 + 1);
-                Die2 = (int) (Math.random() * 6 + 1);
-                Player1 = Player1 + Die1 + Die2;
-                System.out.println("Spiller 1's points med kastene:" + Die1 + " og " + Die2 + " Totale points = " + Player1);
-                if (Die1 == 1 && Die2 == 1) {
-                    System.out.println("Player2 wins");
-                    break;
-                }
-                if(Die1==6&&Die1==Die2){
-                    System.out.println("Player1 wins");
-                    break;
-                }
-
-
+            Die1 = (int) (Math.random() * 6 + 1);
+            Die2 = (int) (Math.random() * 6 + 1);
+            Player1 = Player1 + Die1 + Die2;
+            System.out.println("Spiller 1's points med kastene:" + Die1 + " og " + Die2 + " Totale points = " + Player1);
+            if (Die1 == 1 && Die2 == 1) {
+                System.out.println("Player2 wins");
+                break;
+            }
+            if (Die1 == 6 && Die1 == Die2) {
+                System.out.println("Player1 wins");
+                break;
+            }
 
             //Special condition for extra turn
             if (Die1 == Die2) {
@@ -41,7 +39,7 @@ public class Spil{
                 System.out.println("Player 2 wins");
                 break;
             }
-            if(Die1==6&&Die1==Die2){
+            if (Die1 == 6 && Die1 == Die2) {
                 System.out.println("Player1 wins");
                 break;
             }
@@ -55,7 +53,7 @@ public class Spil{
                 System.out.println("Player 1 wins");
                 break;
             }
-            if(Die1==6&&Die1==Die2){
+            if (Die1 == 6 && Die1 == Die2) {
                 System.out.println("Player2 wins");
                 break;
             }
@@ -70,7 +68,7 @@ public class Spil{
                 System.out.println("Player 1 wins");
                 break;
             }
-            if(Die1==6&&Die1==Die2){
+            if (Die1 == 6 && Die1 == Die2) {
                 System.out.println("Player2 wins");
                 break;
             }
@@ -80,17 +78,17 @@ public class Spil{
                 break;
             }
         }
-            //Prints out results of the game
-            if (Player1 >=40 && Player1 > Player2) {
-                System.out.println("Player1 vinder");
-            }
+        //Prints out results of the game
+        if (Player1 >= 40 && Player1 > Player2) {
+            System.out.println("Player1 vinder");
+        }
 
-            if (Player2 >= 40 && Player2 > Player1) {
-                System.out.println("Player2 vinder");
-            }
+        if (Player2 >= 40 && Player2 > Player1) {
+            System.out.println("Player2 vinder");
+        }
 
-            if (Player1 == Player2 && Player1 >= 40) {
-                System.out.println("Uafgjort");
-            }
+        if (Player1 == Player2 && Player1 >= 40) {
+            System.out.println("Uafgjort");
+        }
     }
 }

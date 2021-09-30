@@ -6,13 +6,10 @@ public class Player {
     int points;
     boolean win = false;
 
-
-
     public Player(RaffleCup cup, String name) {
         inname = name;
         incup = cup;
     }
-
 
     public void redirectPoint(RaffleCup x) {
         if (win) {
@@ -22,8 +19,6 @@ public class Player {
                 samefaces(x);
             } else {
                 awardpoint(x);
-
-
             }
         }
     }
@@ -36,12 +31,11 @@ public class Player {
 
     private void samefaces(RaffleCup x) {
         if (points >= 40) {
-            if (x.interning1 == x.interning2 && x.interning1!=1) {
+            if (x.interning1 == x.interning2 && x.interning1 != 1) {
                 win();
             }
 
         } else {
-
 
             if (x.interning1 == 1) {
                 points = 0;
@@ -59,8 +53,8 @@ public class Player {
                 if (x.interning1 == 1) {
                     points = 0;
                     System.out.println(inname + " Your points have been reset, and now you have " + points + " Points");
-                    reroll(x);}
-
+                    reroll(x);
+                }
 
             } else {
                 points = points + x.interning1 + x.interning2;
@@ -72,12 +66,10 @@ public class Player {
 
     private void reroll(RaffleCup x) {
         System.out.println("Congratulations you may now roll again");
-        Scanner rollagain= new Scanner(System.in);
-        String inpt=rollagain.nextLine();
+        Scanner rollagain = new Scanner(System.in);
+        String inpt = rollagain.nextLine();
         x.roll();
         redirectPoint(x);
-
-
     }
 
     private void win() {
@@ -85,11 +77,10 @@ public class Player {
         System.out.println(inname + " Has won the game");
 
     }
-    private void printpoint(){
+
+    private void printpoint() {
         System.out.println(inname + " You now have " + points + " Points");
     }
-
-
 }
 
 
