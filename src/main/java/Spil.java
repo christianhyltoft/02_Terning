@@ -2,10 +2,7 @@ import java.util.Scanner;
 
 public class Spil{
     public static void main(String[] args) {
-        RaffleCup cup1 = new RaffleCup();
-        RaffleCup cup2 = new RaffleCup();
-        cup1.roll();
-        cup1.print();
+
         Scanner input = new Scanner(System.in);
         //Defines variables such as Players and dies
         int Player1 = 0;

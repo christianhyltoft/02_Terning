@@ -73,7 +73,6 @@ public class Player {
         Scanner rollagain= new Scanner(System.in);
         String inpt=rollagain.nextLine();
         x.roll();
-        x.print();
         redirectPoint(x);
 
 
@@ -81,7 +80,7 @@ public class Player {
 
     private void win() {
         win = true;
-        System.out.println(inname + " Har vundet spillet");
+        System.out.println(inname + " Has won the game");
 
     }
 

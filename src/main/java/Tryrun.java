@@ -12,14 +12,12 @@ public class Tryrun {
             Scanner input = new Scanner(System.in);
             String turn = input.nextLine();
             cup1.roll();
-            cup1.print();
             player1.redirectPoint(cup1);
             if (player1.win) {
                 break;
             }
             String turnp2 = input.nextLine();
             cup1.roll();
-            cup1.print();
             player2.redirectPoint(cup1);
             if (player2.win) {
                 break;

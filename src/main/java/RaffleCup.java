@@ -10,15 +10,14 @@ public class RaffleCup {
         interning2 = (int) (Math.random() * 6 + 1);
         sum = interning1 + interning2;
         gui.setDice(interning1,interning2);
+        print();
 
 
     }
-    public void setGUi(GUI x){
 
-    }
 
-    public void print() {
-        System.out.println("Du slog " + interning1 + "," + interning2 + " Med summen " + sum);
+    private void print() {
+        System.out.println("you rolled " + interning1 + "," + interning2 + " with the sum " + sum);
 
     }
 
