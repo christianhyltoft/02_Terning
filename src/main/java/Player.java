@@ -1,5 +1,3 @@
-import gui_main.GUI;
-
 import java.util.*;
 
 public class Player {
@@ -51,7 +49,7 @@ public class Player {
                 reroll(x);
             } else if (x.interning1 == 6) {
                 points = points + x.interning1 + x.interning2;
-                System.out.println(inname + " You now have " + points + " Points");
+                printpoint();
                 System.out.println("Congratulations you may now roll again if you roll to 6's you win the game");
 
                 x.roll();
@@ -62,7 +60,7 @@ public class Player {
 
             } else {
                 points = points + x.interning1 + x.interning2;
-                System.out.println(inname + " You now have " + points + " Points");
+                printpoint();
                 reroll(x);
             }
         }
@@ -82,6 +80,9 @@ public class Player {
         win = true;
         System.out.println(inname + " Has won the game");
 
+    }
+    private void printpoint(){
+        System.out.println(inname + " You now have " + points + " Points");
     }
 
 
