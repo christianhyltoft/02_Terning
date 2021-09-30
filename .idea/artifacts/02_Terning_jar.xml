@@ -2,7 +2,7 @@
   <artifact type="jar" name="02_Terning:jar">
     <output-path>$USER_HOME$/OneDrive/Skrivebord</output-path>
     <root id="archive" name="02_Terning.jar">
-      <element id="module-output" name="02_Terning" />
+      <element id="module-output" name="02_Del1" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.7/matadorgui-3.1.7.jar" path-in-jar="/" />
       <element id="library" level="project" name="matadorgui-3.1.6" />
     </root>

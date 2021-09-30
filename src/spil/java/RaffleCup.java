@@ -20,6 +20,19 @@ public class RaffleCup {
         return sum;
     }
 
+    public void setInterning1(int interning1set) {
+        this.interning1 = interning1set;
+    }
+
+    public void setInterning2(int interning2set) {
+        this.interning1 = interning2set;
+    }
+
+    public void setSum(int sumset) {
+        this.sum = sumset;
+    }
+
+
     // metode der aendrer vaerdig på de to variable or derefter summen
     public void roll() {
         interning1 = (int) (Math.random() * 6 + 1);

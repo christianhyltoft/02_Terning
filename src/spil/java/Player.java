@@ -3,8 +3,21 @@ import java.util.*;
 public class Player {
     final String inname;
    final RaffleCup incup;
-    int points;
+   private int points;
     boolean win = false;
+
+    public int getPoints() {
+        return points;
+    }
+    public boolean getWin(){
+        return win;
+    }
+    public void setPoint(int setPoints){
+        points=setPoints;
+    }
+    public void setWin(boolean setWin){
+        win=setWin;
+    }
 
     public Player(RaffleCup cup, String name) {
         inname = name;
@@ -24,7 +37,7 @@ public class Player {
     }
 //Hvis spiller har forskellige slag for man bare point
     private void awardpoint(RaffleCup x) {
-        points = points + x.getInterning1() + x.getInterning2();
+        points = points + x.getSum();
         System.out.println(inname + " You now have " + points + " Points");
 
     }
@@ -42,7 +55,7 @@ public class Player {
                 System.out.println(inname + " Your points have been reset, and now you have " + points + " Points");
                 reroll(x);
             } else if (x.getInterning1() == 6) {
-                points = points + x.getInterning1() + x.getInterning2();
+                points = points + x.getSum();
                 printpoint();
                 System.out.println("Congratulations you may now roll again if you roll two of the same kind you win the game");
 
@@ -57,7 +70,7 @@ public class Player {
                 }
 
             } else {
-                points = points + x.getInterning1() + x.getInterning2();
+                points = points + x.getSum();
                 printpoint();
                 reroll(x);
             }
